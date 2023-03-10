@@ -1,0 +1,83 @@
+{
+	"id": "4bd861e5-3efd-4226-a0f6-6b8c0a3298c4",
+	"name": "API collection",
+	"timestamp": "2023-03-09T13:58:41.677Z",
+	"collection_id": "26117535-b3981e07-21a1-4c5d-845c-b34f8c4197e3",
+	"folder_id": 0,
+	"environment_id": "26117535-18a5d808-d46f-46b9-ba27-9910e854fa5d",
+	"totalPass": 6,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-03-09T13:58:40.821Z",
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "2be4cb3b-af9f-40ce-9d4d-d611c82bc74e",
+			"name": "task 7",
+			"url": "https://petstore.swagger.io/v2/swagger.json",
+			"time": 242,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has string": true,
+				"confirm swagger version is 2.0": true,
+				"confirm host is petstore.swagger.io": true,
+				"confirm basepath is /v2": true,
+				"confirm schemes is json": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm swagger version is 2.0": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm host is petstore.swagger.io": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm basepath is /v2": {
+					"pass": 1,
+					"fail": 0
+				},
+				"confirm schemes is json": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				242
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has string": true,
+					"confirm swagger version is 2.0": true,
+					"confirm host is petstore.swagger.io": true,
+					"confirm basepath is /v2": true,
+					"confirm schemes is json": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 242,
+	"collection": {
+		"requests": [
+			{
+				"id": "2be4cb3b-af9f-40ce-9d4d-d611c82bc74e",
+				"method": "GET"
+			}
+		]
+	}
+}

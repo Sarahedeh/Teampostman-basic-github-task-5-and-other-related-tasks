@@ -1,0 +1,131 @@
+{
+	"id": "e78ff25e-16a6-4b00-bb28-c6525b384b03",
+	"name": "Swagger Petstore sarah3",
+	"timestamp": "2023-03-09T14:00:42.044Z",
+	"collection_id": "26117535-b4fbe451-f9d2-407e-bec4-2a72844f7e29",
+	"folder_id": 0,
+	"environment_id": "26117535-18a5d808-d46f-46b9-ba27-9910e854fa5d",
+	"totalPass": 2,
+	"delay": 0,
+	"persist": true,
+	"status": "finished",
+	"startedAt": "2023-03-09T14:00:38.924Z",
+	"totalFail": 1,
+	"results": [
+		{
+			"id": "a43e481d-30fa-433f-9bc9-298c141e69d6",
+			"name": "Finds Pets by status 8bb",
+			"url": "https://petstore.swagger.io/v2/pet/findByStatus?status=available&status=available",
+			"time": 1309,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"Status code name has string": true,
+				"Your test name": false
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Status code name has string": {
+					"pass": 1,
+					"fail": 0
+				},
+				"Your test name": {
+					"pass": 0,
+					"fail": 1
+				}
+			},
+			"times": [
+				1309
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"Status code name has string": true,
+					"Your test name": false
+				}
+			]
+		},
+		{
+			"id": "72c43668-b1b3-4c8b-8da2-1040a4a82277",
+			"name": "Find purchase order by ID task 8bb.",
+			"url": "https://petstore.swagger.io/v2/store/order/9223372036854775000",
+			"time": 441,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				441
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "ce44d93e-221f-40a1-9868-2d94ac88bc69",
+			"name": "Delete purchase order by ID 8bb..",
+			"url": "https://petstore.swagger.io/v2/store/order/9223372036854775000",
+			"time": 395,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				395
+			],
+			"allTests": [
+				{}
+			]
+		},
+		{
+			"id": "90b2142e-fe75-418f-94bd-f82ddf4ccb9e",
+			"name": "Place an order for a pet task8bb,",
+			"url": "https://petstore.swagger.io/v2/store/order",
+			"time": 227,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {},
+			"testPassFailCounts": {},
+			"times": [
+				227
+			],
+			"allTests": [
+				{}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 2372,
+	"collection": {
+		"requests": [
+			{
+				"id": "a43e481d-30fa-433f-9bc9-298c141e69d6",
+				"method": "GET"
+			},
+			{
+				"id": "72c43668-b1b3-4c8b-8da2-1040a4a82277",
+				"method": "GET"
+			},
+			{
+				"id": "ce44d93e-221f-40a1-9868-2d94ac88bc69",
+				"method": "DELETE"
+			},
+			{
+				"id": "90b2142e-fe75-418f-94bd-f82ddf4ccb9e",
+				"method": "POST"
+			}
+		]
+	}
+}
