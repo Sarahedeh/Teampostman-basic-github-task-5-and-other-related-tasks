@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "b3981e07-21a1-4c5d-845c-b34f8c4197e3",
+		"name": "APICollection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26117535"
+	},
+	"item": [
+		{
+			"name": "task 7",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});",
+							"pm.test(\"Status code name has string\", function () {",
+							"    pm.response.to.have.status(\"OK\");",
+							"});",
+							"",
+							"var jsonData = pm.response.json();",
+							"",
+							"console.log(jsonData)",
+							"console.log(jsonData.swagger)",
+							"",
+							"",
+							"pm.test(\"confirm swagger version is 2.0\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.swagger).to.eql(\"2.0\");",
+							"});",
+							"",
+							"pm.test(\"confirm host is petstore.swagger.io\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.swagger).to.eql(\"2.0\");",
+							"",
+							"",
+							"});pm.test(\"confirm basepath is /v2\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.swagger).to.eql(\"2.0\");",
+							"});",
+							"",
+							"pm.test(\"confirm schemes is json\", function () {",
+							"    var jsonData = pm.response.json();",
+							"    pm.expect(jsonData.swagger).to.eql(\"2.0\");",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"protocolProfileBehavior": {
+				"followRedirects": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://petstore.swagger.io/v2/swagger.json",
+					"protocol": "https",
+					"host": [
+						"petstore",
+						"swagger",
+						"io"
+					],
+					"path": [
+						"v2",
+						"swagger.json"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
